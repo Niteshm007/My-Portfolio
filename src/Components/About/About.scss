@@ -1,0 +1,22 @@
+@import '../../App.scss';
+.About{
+    margin-top: 5rem;
+   
+    @include mobile{
+        height: 180vh;
+    }
+    
+    h1{
+        color: rgb(6, 255, 6);
+        margin-top: 1rem;
+    }
+
+    .Social{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 65px;
+            height: 65px;
+        }
+    }
+}

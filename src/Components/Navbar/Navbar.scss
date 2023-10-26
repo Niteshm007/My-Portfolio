@@ -1,0 +1,28 @@
+.Navbar{
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Side{
+    justify-content: start;
+}
+
+.Name{
+   h3{
+    color: rgb(0, 255, 0);
+   }
+}
+
+.Social{
+    a{
+        padding: 5px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+       
+      }
+}

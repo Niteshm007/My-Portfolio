@@ -1,0 +1,21 @@
+@import '../../App.scss';
+.Skill {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include mobile{
+    height: 260vh;
+  }
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 90px;
+        color: rgb(3, 255, 3);
+      }
+  }
+}
