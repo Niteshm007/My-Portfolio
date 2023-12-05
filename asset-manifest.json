@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.037bfd29.css",
-    "main.js": "/My-Portfolio/static/js/main.c643c849.js",
+    "main.js": "/My-Portfolio/static/js/main.b679f5f0.js",
     "static/js/787.68dbee1e.chunk.js": "/My-Portfolio/static/js/787.68dbee1e.chunk.js",
     "static/media/Project7.png": "/My-Portfolio/static/media/Project7.d442c0559a1b15f39059.png",
+    "static/media/Project10.png": "/My-Portfolio/static/media/Project10.72b00c927e7f9f076bba.png",
     "static/media/Project4.png": "/My-Portfolio/static/media/Project4.8619d4bd58ddba132b4f.png",
     "static/media/Project6.png": "/My-Portfolio/static/media/Project6.55619e5bc8bbbda7f289.png",
     "static/media/Project3.png": "/My-Portfolio/static/media/Project3.a25a39e3b95edca79638.png",
     "static/media/Project5.png": "/My-Portfolio/static/media/Project5.fca56a6f909e088f5e51.png",
-    "static/media/Nitesh (Resume) .pdf": "/My-Portfolio/static/media/Nitesh (Resume) .bb3bde2dd6371c7a00bb.pdf",
+    "static/media/Nitesh (Resume) .pdf": "/My-Portfolio/static/media/Nitesh (Resume) .2fc241c86dad127cff95.pdf",
     "static/media/Git.png": "/My-Portfolio/static/media/Git.cfddf4fd11d107afa173.png",
     "static/media/WD.webp": "/My-Portfolio/static/media/WD.2057bb924dfe8edf0a13.webp",
     "static/media/Bs.png": "/My-Portfolio/static/media/Bs.d650a3504bbdd7a8dba2.png",
@@ -23,11 +24,11 @@
     "static/media/Html.png": "/My-Portfolio/static/media/Html.9d6805c72fa69c502bdd.png",
     "index.html": "/My-Portfolio/index.html",
     "main.037bfd29.css.map": "/My-Portfolio/static/css/main.037bfd29.css.map",
-    "main.c643c849.js.map": "/My-Portfolio/static/js/main.c643c849.js.map",
+    "main.b679f5f0.js.map": "/My-Portfolio/static/js/main.b679f5f0.js.map",
     "787.68dbee1e.chunk.js.map": "/My-Portfolio/static/js/787.68dbee1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.037bfd29.css",
-    "static/js/main.c643c849.js"
+    "static/js/main.b679f5f0.js"
   ]
 }
