@@ -1,0 +1,18 @@
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:orange; /* Button background color */
+  color: red; /* Text color */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}

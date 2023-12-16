@@ -10,6 +10,7 @@ import Project7 from "../../Img/Project7.png";
 import Project8 from "../../Img/Project8.png";
 import Project9 from "../../Img/Project9.png";
 import Project10 from "../../Img/Project10.png";
+import Project11 from "../../Img/Project11.jpg";
 
 const Work = () => {
   return (
@@ -144,23 +145,6 @@ const Work = () => {
         </div>
         <div className="col-md-6">
           <div className="workDes">
-            <h3>Music App</h3>
-            <p>
-              This is a Music App that allows users to search and play music,
-              create playlists, and view their library. It has a sleek and
-              modern design
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-6">
-          <div className="workImg">
-            <img src={Project9} alt="" />
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="workDes">
             <h3>CRUD Form App</h3>
             <p>
               This is a Form App created using CRUD methods and API.The page has
@@ -174,7 +158,7 @@ const Work = () => {
       <div className="row">
         <div className="col-md-6">
           <div className="workImg">
-            <img src={Project10} alt="" />
+            <img src={Project9} alt="" />
           </div>
         </div>
         <div className="col-md-6">
@@ -185,6 +169,44 @@ const Work = () => {
               easily create, store, and organize their tasks. Users can add,
               delete, archive, and restore tasks, making it a convenient tool
               for efficient task management and organization.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6">
+          <div className="workImg">
+            <img src={Project10} alt="" />
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="workDes">
+            <h3>Gme Dashboard</h3>
+            <p>
+              Explore a world of gaming at your fingertips with our
+              game-dashboard app. Dive into the Home section for detailed game
+              information, navigate through Categories to find and organize your
+              favorites, curate your Library with liked games, and keep track of
+              your gaming wishlist in the Bag.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6">
+          <div className="workImg">
+            <img src={Project11} alt="" />
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="workDes">
+            <h3>Movie App</h3>
+            <p>
+              Explore a cinematic universe at our movies and TV shows hub,
+              featuring a user-friendly search bar. Immerse yourself in each
+              film with trailers, director and writer details, ratings, and cast
+              information. Discover the latest trends, popular picks, and
+              top-rated gems for an unparalleled entertainment experience.
             </p>
           </div>
         </div>

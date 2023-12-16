@@ -1,28 +1,47 @@
-.Navbar{
-    height: 13vh;
-    display: flex;
+.Navbar {
+  padding-top: 15px;
+  width: 85%;
+  margin: auto;
+  .nav-left {
+    flex: 1;
     align-items: center;
-    justify-content: center;
-}
+    display: flex;
+    gap: 2rem;
+  }
 
-.Side{
-    justify-content: start;
-}
+  button{
+    background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
+  }
 
-.Name{
-   h3{
-    color: rgb(0, 255, 0);
-   }
-}
-
-.Social{
-    a{
-        padding: 5px;
+  .nav-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(2, 255, 2);
+    img{
+      width: 80px;
+      border-radius: 25px;
     }
+  }
 
-    img {
-        width: 30px;
-        height: 30px;
-       
-      }
+  .nav-list {
+    list-style-type: none;
+  }
+
+  .nav-list:hover {
+    cursor: pointer;
+    color: rgb(9, 250, 9) !important;
+    border-bottom: 2px solid rgb(2, 255, 2);
+  }
+
+  .N-logo {
+    width: 5rem;
+    border-radius: 25px;
+  }
+
+  .Social{
+    img{
+      width: 50px;
+      margin: 10px;
+    }
+  }
 }

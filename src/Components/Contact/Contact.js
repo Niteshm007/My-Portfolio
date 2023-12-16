@@ -23,8 +23,8 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const [Error] = useState(null);
-  const [Success] = useState(null);
+  const [error,setError] = useState(null);
+  const [success,setSuccess] = useState(null);
   const [loading, setLoading] = useState(false);
   const [inputValues, setInputValues] = useState({
     user_name: "",
@@ -48,8 +48,10 @@ const Contact = () => {
       .then(
         (result) => {
           // Show success toast
-          toast.success("Message sent successfully");
-          Success(true);
+          toast.success("Message sent successfully",{
+            autoClose:2000,
+          });
+          setSuccess(true);
 
           // Reset input fields
           setInputValues({
@@ -63,8 +65,10 @@ const Contact = () => {
         },
         (error) => {
           // Show error toast
-          toast.error("Message not sent");
-          Error(true);
+          toast.error("Message not sent",{
+            autoClose:2000,
+          });
+          setError(true);
 
           // Reset loading state
           setLoading(false);
@@ -117,7 +121,7 @@ const Contact = () => {
           <motion.div
             className="rightContainer"
           >
-             <motion.form
+           <motion.form
             ref={formRef}
             onSubmit={sendEmail}
             initial={{ opacity: 0 }}
@@ -150,7 +154,10 @@ const Contact = () => {
             <button type="submit" value="Send" disabled={loading}>
             {loading ? <span style={{ fontWeight: "bold", color: "black" }}>Sending...</span> : "Send"}
             </button>
-          </motion.form>          </motion.div>
+            {error && ""}
+            {success && ""}
+          </motion.form>      
+          </motion.div>
         </div>
       </div>
     </motion.div>

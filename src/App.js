@@ -10,7 +10,7 @@ import About from './Components/About/About'
 function App() {
   return (
     <div className='App'>
-      <div><Navbar/></div>
+      <div id="Home"><Navbar/></div>
       <div id="Intro"><Intro/></div>
       <div id="Skills"><Skill/></div>
       <div id="Works"><Work/></div>

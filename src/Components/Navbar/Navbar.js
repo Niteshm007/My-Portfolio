@@ -1,22 +1,121 @@
 import React from "react";
 import "./Navbar.scss";
-import Sidebar from "./Sidebar/Sidebar";
-import Insta from '../../Img/Instagram.png'
-import Link from '../../Img/Link.png'
-import Git from '../../Img/Git.png'
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-scroll";
+import N from "../../Img/N.png";
+import { motion } from "framer-motion";
+import Insta from "../../Img/Instagram.png"
+import Linked from "../../Img/Link.png"
+import Git from "../../Img/Git.png"
 
-const Navbar = () => {
+const textVariants = {
+  initial: {
+    x: 500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+
+  scrollBtn: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
+
+const AppNavbar = () => {
+  const navListStyle = {
+    textDecoration: "none",
+    margin: "0 15px",
+    fontSize: "25px",
+    color: "rosybrown"
+  };
+
   return (
-    <div className="Navbar">
-      <div className="container d-flex justify-content-between">
-        <div className="Side">
-          <Sidebar />
-        </div>
-        <div className="Name">
-          <h3>Nitesh Malviya</h3>
-        </div>
-        <div className="Social">
-          <div className="Links">
+    <motion.div
+      className="Navbar"
+      variants={textVariants}
+      initial="initial"
+      animate="animate"
+    >
+      <Navbar expand="md">
+        <Navbar.Brand className="mr-auto">
+          <div className="nav-left">
+            <div className="nav-name">
+              <img src={N} alt="" />
+            </div>
+          </div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Link
+              to="Home"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              Home
+            </Link>
+            <Link
+              to="Intro"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              Intro
+            </Link>
+            <Link
+              to="Skills"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              Skills
+            </Link>
+            <Link
+              to="Work"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              Works
+            </Link>
+
+            <Link
+              to="Contact"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </Link>
+            <Link
+              to="About"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              About
+            </Link>
+          </Nav>
+          <Nav>
+            <div className="Social">
             <a
               href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
               target="_blank"
@@ -30,7 +129,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={Link} alt="" />
+              <img src={Linked} alt="" />
             </a>
             <a
               href="https://github.com/Niteshm007"
@@ -39,11 +138,12 @@ const Navbar = () => {
             >
               <img src={Git} alt="" />
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </motion.div>
   );
 };
 
-export default Navbar;
+export default AppNavbar;

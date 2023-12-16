@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Into.scss";
 import { motion } from "framer-motion";
-import Nit from "../../Img/Hero.png";
+import Wd from "../../Img/WD.webp";
 import Scroll from "../../Img/Scroll.png";
 import Resume from "../../Resume/Nitesh (Resume) .pdf";
 
@@ -29,19 +29,7 @@ const textVariants = {
   },
 };
 
-const slideVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      duration: 20,
-      repeat: Infinity,
-      repeatType: "mirror",
-    },
-  },
-};
+
 const Intro = () => {
   const [downloading, setDownloading] = useState(false);
   const handleDownloadClick = () => {
@@ -62,11 +50,11 @@ const Intro = () => {
           >
             <motion.h1 variants={textVariants}>Nitesh Malviya</motion.h1>
             <motion.h2 variants={textVariants}>
-              Web Developer & Designer
+              Web Developer 
             </motion.h2>
             <motion.p variants={textVariants}>
-              Frontend Developer with a high level of experience in web
-              designing and development, producing quality work
+              Frontend Developer with a high level of knowledge in web
+              development, producing quality work.
             </motion.p>
             <motion.div>
               <a href={Resume} download="Nitesh (Resume) .pdf">
@@ -84,20 +72,17 @@ const Intro = () => {
               variants={textVariants}
               animate="scrollBtn"
             />
-            <motion.div
-              className="slidingContainer"
-              variants={slideVariants}
-              initial="initial"
-              animate="animate"
-            >
-              Web Developer & Designer
-            </motion.div>
           </motion.div>
         </div>
 
         <div className="col-md-6">
-          <motion.div className="rightImg" variants={textVariants}>
-            <motion.img src={Nit} alt="" variants={textVariants} />
+          <motion.div
+            className="rightImg"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 5 }}
+          >
+            <motion.img src={Wd} alt=""  />
           </motion.div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .Contact {
   margin-top: 5rem;
 
@@ -10,6 +12,10 @@
     h1 {
       font-size: 55px;
       line-height: 50px;
+
+      @include mobile{
+        text-align: center;
+      }
     }
   }
 
