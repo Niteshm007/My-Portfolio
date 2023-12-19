@@ -26,11 +26,14 @@
   .nav-list {
     list-style-type: none;
   }
-
+  a.nav-list{
+    color: var(--title-color) !important;
+  }
+  
   .nav-list:hover {
     cursor: pointer;
-    color: rgb(9, 250, 9) !important;
-    border-bottom: 2px solid rgb(2, 255, 2);
+    color: var(--first-color) !important;
+    border-bottom: 2px solid var(--first-color);
   }
 
   .N-logo {
@@ -43,6 +46,7 @@
     column-gap: 16px;
     margin-top: 1rem;
 }
+
 
 .contact_social-link {
     background-color: var(--container-color);
