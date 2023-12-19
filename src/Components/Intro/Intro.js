@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import "./Into.scss";
+import React from "react";
+import "./Intro.scss";
+import Profile from "../../assets/N.jpg";
+import { FaDownload } from "react-icons/fa";
+import CV from "../../Resume/Nitesh (Resume) .pdf";
 import { motion } from "framer-motion";
-import Wd from "../../Img/WD.webp";
-import Scroll from "../../Img/Scroll.png";
-import Resume from "../../Resume/Nitesh (Resume) .pdf";
 
 const textVariants = {
   initial: {
@@ -29,62 +29,55 @@ const textVariants = {
   },
 };
 
-
 const Intro = () => {
-  const [downloading, setDownloading] = useState(false);
-  const handleDownloadClick = () => {
-    setDownloading(true);
-    setTimeout(() => {
-      setDownloading(false);
-    });
-  };
   return (
-    <div className="Intro container-md">
-      <div className="row">
-        <div className="col-md-6">
-          <motion.div
-            className="txtContainer"
-            variants={textVariants}
-            initial="initial"
-            animate="animate"
-          >
-            <motion.h1 variants={textVariants}>Nitesh Malviya</motion.h1>
-            <motion.h2 variants={textVariants}>
-              Web Developer 
-            </motion.h2>
-            <motion.p variants={textVariants}>
-              Frontend Developer with a high level of knowledge in web
-              development, producing quality work.
-            </motion.p>
-            <motion.div>
-              <a href={Resume} download="Nitesh (Resume) .pdf">
-                <button
-                  className={`CV ${downloading ? "downloading" : ""}`}
-                  onClick={handleDownloadClick}
-                >
-                  {downloading ? "Processing..." : "Download CV"}
-                </button>
-              </a>
-            </motion.div>
-            <motion.img
-              src={Scroll}
-              alt=""
-              variants={textVariants}
-              animate="scrollBtn"
-            />
+    <div className="home section">
+      <div className="container">
+        <motion.div
+          className="row"
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.div className="col-md-6">
+            <img src={Profile} alt="" className="home_img" />
           </motion.div>
-        </div>
+          <div className="col-md-6">
+            <div className="home_content">
+              <div className="home_data">
+                <div className="home_title">
+                  <motion.h1 variants={textVariants}>
+                    I'm Nitesh Malviya
+                  </motion.h1>
+                  <h1>
+                    <motion.span variants={textVariants}>
+                      Web Developer
+                    </motion.span>
+                  </h1>
+                  <motion.p
+                    className="home_description"
+                    variants={textVariants}
+                  >
+                    I'm a Frontend Developer with a high level of knowledge in
+                    web development, producing quality work.
+                  </motion.p>
 
-        <div className="col-md-6">
-          <motion.div
-            className="rightImg"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 5 }}
-          >
-            <motion.img src={Wd} alt=""  />
-          </motion.div>
-        </div>
+                  <motion.div
+                    className="CV text-center mt-4"
+                    variants={textVariants}
+                  >
+                    <a href={CV} download="" className="button">
+                      Download CV
+                      <span className="button_icon">
+                        <FaDownload />
+                      </span>
+                    </a>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

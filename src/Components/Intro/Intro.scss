@@ -1,0 +1,135 @@
+.home {
+  grid-template-columns: 4.32fr 7.68fr;
+  align-items: center;
+  padding: 40px;
+  height: 100vh;
+  z-index: 1;
+}
+
+.home_img {
+  height: 90%;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.home_data {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+}
+
+.home_title {
+  position: relative;
+  line-height: 1.24;
+
+}
+
+.home_title h1 {
+  font-size: 2rem;
+  padding-left: 70px
+}
+
+.home_title span {
+  color: var(--first-color);
+}
+
+.home_title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22%;
+  width: 40px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--first-color);
+}
+
+.home_description {
+  line-height: 2.125;
+  margin-block: 16px 32px;
+}
+
+// @import '../../App.scss';
+
+// .Intro {
+//   overflow: hidden;
+//   background-color: linear-gradient(180deg, #0c0c1d, #111132);
+  
+
+//   .txtContainer {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     gap: 15px;
+
+//     @include mobile{
+//         gap: 20px;
+//         align-items: center;
+//         text-align: center;
+//     }
+
+//     h1 {
+//       font-size: 5.5rem;
+//       color: rgb(2, 255, 2);
+//     }
+//     h2 {
+//       font-size: 2.5rem;
+//       color: orange;
+//       letter-spacing: 5px;
+//     }
+
+//     p{
+//         font-size: 1.6rem;
+//         color: rosybrown;
+//     }
+
+//     .CV {
+//         cursor: pointer;
+//         padding: 10px 20px;
+//         border-radius: 10px;
+//         background-color: rgb(253, 197, 15);
+//         border: none;
+//         font-weight: 300;
+//         font-weight: bold;
+//         font-size: 20px;
+//       }
+    
+//       .CV:hover {
+//         background-color: rgb(98, 233, 118);
+//         color: red;
+//       }
+
+//     img {
+//       width: 50px;
+//     }
+//   }
+
+//   .rightImg {
+//     margin-top: 20px;
+
+//     img{
+//         width: 100%;
+//         object-fit: cover;
+//     }
+//   }
+
+//   .slidingContainer{
+//     position: absolute;
+//     font-size: 50vh;
+//     bottom: 20px;
+//     white-space: nowrap;
+//     color: #ffffff09;
+//     width: 50%;
+//     font-weight: bold;
+
+//     @include mobile{
+//         font-size: 20vh;
+//     }
+// }
+// }

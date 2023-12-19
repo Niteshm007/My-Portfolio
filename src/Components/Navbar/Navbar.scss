@@ -38,10 +38,26 @@
     border-radius: 25px;
   }
 
-  .Social{
-    img{
-      width: 50px;
-      margin: 10px;
-    }
-  }
+  .contact_socials {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 1rem;
+}
+
+.contact_social-link {
+    background-color: var(--container-color);
+    color: var(--title-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease;
+}
+
+.contact_social-link:hover {
+    background-color: var(--first-color);
+    color: var(--text-white);
+    height: 50px;
+}
 }

@@ -4,9 +4,11 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
 import N from "../../Img/N.png";
 import { motion } from "framer-motion";
-import Insta from "../../Img/Instagram.png"
-import Linked from "../../Img/Link.png"
-import Git from "../../Img/Git.png"
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const textVariants = {
   initial: {
@@ -77,6 +79,15 @@ const AppNavbar = () => {
               Intro
             </Link>
             <Link
+              to="Education"
+              className="nav-list"
+              style={navListStyle}
+              smooth={true}
+              duration={500}
+            >
+              Education
+            </Link>
+            <Link
               to="Skills"
               className="nav-list"
               style={navListStyle}
@@ -86,13 +97,13 @@ const AppNavbar = () => {
               Skills
             </Link>
             <Link
-              to="Work"
+              to="Project"
               className="nav-list"
               style={navListStyle}
               smooth={true}
               duration={500}
             >
-              Works
+              Projects
             </Link>
 
             <Link
@@ -115,30 +126,32 @@ const AppNavbar = () => {
             </Link>
           </Nav>
           <Nav>
-            <div className="Social">
-            <a
-              href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Insta} alt="" />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/nitesh-malviya-01b572247"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Linked} alt="" />
-            </a>
-            <a
-              href="https://github.com/Niteshm007"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Git} alt="" />
-            </a>
-            </div>
+          <div className="contact_socials">
+                <a
+                  href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contact_social-link"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nitesh-malviya-01b572247"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contact_social-link"
+                >
+                  <FaLinkedin />
+                </a>
+                <a
+                  href="https://github.com/Niteshm007"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contact_social-link"
+                >
+                  <FaGithub />
+                </a>
+              </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

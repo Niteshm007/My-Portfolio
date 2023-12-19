@@ -32,7 +32,9 @@ const Skill = () => {
     >
       <div className="row">
         <div className="titleContainer text-center">
-          <h1>My Skills</h1>
+        <motion.h2 className="section_title" variants={variants}>
+        My <span>Skills</span>
+      </motion.h2>
         </div>
       </div>
 
