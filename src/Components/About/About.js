@@ -39,13 +39,16 @@ const About = () => {
       animate="animate"
     >
       <div className="row">
+      <h3 className="section_title">
+            About <span>Me</span>
+          </h3>
         <div className="col-md-3">
           <div className="Me">
-            <h1>About Me</h1>
+            <h1>My Infos</h1>
             <p>🤵 Nitesh Malviya</p>
             <p>📞 +91 7374866730</p>
             <p>
-              🏡 B-303, Krish Elite, S.P. Ring Road, Nikol, Ahmedabad, Gujarat
+              🏡 Nikol, Ahmedabad, Gujarat
             </p>
             <p>📫 Niteshmalvi74@gmail.com</p>
           </div>
