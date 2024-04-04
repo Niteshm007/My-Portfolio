@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Contact.scss";
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
@@ -127,6 +127,14 @@ const Contact = () => {
             </motion.div>
             <div className="contact_socials">
               <a
+                href="https://wa.me/7374866730"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact_social-link"
+              >
+                <FaWhatsapp />
+              </a>
+              <a
                 href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
                 target="_blank"
                 rel="noreferrer"
@@ -216,4 +224,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

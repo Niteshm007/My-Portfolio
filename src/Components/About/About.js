@@ -3,6 +3,7 @@ import "./About.scss";
 import Insta from "../../Img/Instagram.png";
 import Link from "../../Img/Link.png";
 import Git from "../../Img/Git.png";
+import Whatsapp from "../../Img/Whatsapp.png";
 import { motion } from "framer-motion";
 import FloatingBtn from "../FloatingBtn/FloatingBtn";
 
@@ -39,17 +40,15 @@ const About = () => {
       animate="animate"
     >
       <div className="row">
-      <h3 className="section_title">
-            About <span>Me</span>
-          </h3>
+        <h3 className="section_title">
+          About <span>Me</span>
+        </h3>
         <div className="col-md-3">
           <div className="Me">
             <h1>My Infos</h1>
             <p>🤵 Nitesh Malviya</p>
             <p>📞 +91 7374866730</p>
-            <p>
-              🏡 Nikol, Ahmedabad, Gujarat
-            </p>
+            <p>🏡 Nikol, Ahmedabad, Gujarat</p>
             <p>📫 Niteshmalvi74@gmail.com</p>
           </div>
         </div>
@@ -77,6 +76,15 @@ const About = () => {
         <div className="col-md-3">
           <div className="Social">
             <h1>Social</h1>
+            <a
+              href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Whatsapp} alt="" />
+              <span>Whatsapp</span>
+            </a>
+
             <a
               href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
               target="_blank"

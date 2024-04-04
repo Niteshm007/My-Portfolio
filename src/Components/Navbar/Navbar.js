@@ -4,11 +4,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
 import N from "../../Img/N.png";
 import { motion } from "framer-motion";
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
+import { FaWhatsapp,FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const textVariants = {
   initial: {
@@ -39,7 +35,7 @@ const AppNavbar = () => {
     textDecoration: "none",
     margin: "0 15px",
     fontSize: "25px",
-    color: "rosybrown"
+    color: "rosybrown",
   };
 
   return (
@@ -126,32 +122,40 @@ const AppNavbar = () => {
             </Link>
           </Nav>
           <Nav>
-          <div className="contact_socials">
-                <a
-                  href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  rel="noreferrer"
-                  className="contact_social-link"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/nitesh-malviya-01b572247"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="contact_social-link"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="https://github.com/Niteshm007"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="contact_social-link"
-                >
-                  <FaGithub />
-                </a>
-              </div>
+            <div className="contact_socials">
+              <a
+                href="https://wa.me/7374866730"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact_social-link"
+              >
+                <FaWhatsapp />
+              </a>
+              <a
+                href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noreferrer"
+                className="contact_social-link"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nitesh-malviya-01b572247"
+                target="_blank"
+                rel="noreferrer"
+                className="contact_social-link"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/Niteshm007"
+                target="_blank"
+                rel="noreferrer"
+                className="contact_social-link"
+              >
+                <FaGithub />
+              </a>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
