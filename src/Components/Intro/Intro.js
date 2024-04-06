@@ -2,7 +2,7 @@ import React from "react";
 import "./Intro.scss";
 import Profile from "../../assets/N.jpg";
 import { FaDownload } from "react-icons/fa";
-import CV from "../../Resume/Nitesh Malviya.pdf";
+import CV from "../../Resume/Nitesh (Resume) .pdf";
 import { motion } from "framer-motion";
 
 const textVariants = {
