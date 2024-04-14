@@ -77,9 +77,10 @@ const About = () => {
           <div className="Social">
             <h1>Social</h1>
             <a
-              href="https://instagram.com/nitesh_malvi_007?igshid=MzRlODBiNWFlZA=="
+              href="https://wa.me/7374866730"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              className="contact_social-link"
             >
               <img src={Whatsapp} alt="" />
               <span>Whatsapp</span>
