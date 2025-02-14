@@ -44,7 +44,7 @@ const About = () => {
           About <span>Me</span>
         </h3>
         <div className="col-md-3">
-          <div className="Me">
+          <div className="Me"> 
             <h1>My Infos</h1>
             <p>🤵 Nitesh Malviya</p>
             <p>📞 +91 7374866730</p>
